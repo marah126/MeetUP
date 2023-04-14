@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="467.0" prefWidth="827.0" style="-fx-background-color: #fdf6f6;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.project.orgHomeController">
+   <children>
+      <VBox layoutX="3.0" prefHeight="467.0" prefWidth="827.0" AnchorPane.leftAnchor="0.0">
+         <children>
+            <HBox prefHeight="130.0" prefWidth="820.0" style="-fx-background-color: #ffe7be; -fx-background-radius: 30;">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+               <children>
+                  <Pane prefHeight="124.0" prefWidth="804.0">
+                     <children>
+                        <Label layoutX="32.0" layoutY="14.0" text="Hello!  Are Yoy Ready To Create New Events ?">
+                           <font>
+                              <Font name="Calisto MT Bold Italic" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="32.0" layoutY="62.0" text="Lets Ceate Event . .">
+                           <font>
+                              <Font name="Calisto MT Bold Italic" size="25.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="BTNNEW" layoutX="258.0" layoutY="62.0" mnemonicParsing="false" onAction="#btnCreateAction" prefHeight="31.0" prefWidth="155.0" style="-fx-background-radius: 20; -fx-background-color: #ffd8be;" styleClass="backColor" text="New Event">
+                           <font>
+                              <Font name="Calisto MT" size="15.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="113.0" fitWidth="139.0" layoutX="580.0" layoutY="6.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../image/event.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox prefHeight="350.0" prefWidth="820.0">
+               <children>
+                  <VBox prefHeight="345.0" prefWidth="550.0">
+                     <children>
+                        <HBox prefHeight="80.0" prefWidth="200.0">
+                           <children>
+                              <Pane prefHeight="50.0" prefWidth="85.0" style="-fx-background-color: #ffe7be; -fx-background-radius: 15;">
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="50.0" top="5.0" />
+                                 </HBox.margin>
+                                 <children>
+                                    <Label layoutX="16.0" layoutY="11.0" text="Events">
+                                       <font>
+                                          <Font name="Calisto MT Bold Italic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="CountEvent" layoutX="30.0" layoutY="35.0" text="22">
+                                       <font>
+                                          <Font name="Book Antiqua" size="24.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="50.0" prefWidth="85.0" style="-fx-background-color: #ffe7be; -fx-background-radius: 15;">
+                                 <children>
+                                    <Label layoutX="21.0" layoutY="14.0" text="Likes">
+                                       <font>
+                                          <Font name="Calisto MT Bold Italic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="CountLikes" layoutX="30.0" layoutY="35.0" text="22">
+                                       <font>
+                                          <Font name="Book Antiqua" size="24.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="40.0" top="5.0" />
+                                 </HBox.margin>
+                              </Pane>
+                              <Pane prefHeight="50.0" prefWidth="85.0" style="-fx-background-color: #ffe7be; -fx-background-radius: 15;">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="14.0" text="Followers">
+                                       <font>
+                                          <Font name="Calisto MT Bold Italic" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="CountFollowers" layoutX="31.0" layoutY="35.0" text="22">
+                                       <font>
+                                          <Font name="Book Antiqua" size="24.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="40.0" top="5.0" />
+                                 </HBox.margin>
+                              </Pane>
+                              <Pane prefHeight="50.0" prefWidth="85.0" style="-fx-background-color: #ffe7be; -fx-background-radius: 15;">
+                                 <children>
+                                    <Label layoutX="2.0" layoutY="14.0" text="Feedbacks">
+                                       <font>
+                                          <Font name="Calisto MT Bold Italic" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="CountFeedbacks" layoutX="29.0" layoutY="35.0" text="22">
+                                       <font>
+                                          <Font name="Book Antiqua" size="24.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="40.0" top="5.0" />
+                                 </HBox.margin>
+                              </Pane>
+                           </children>
+                        </HBox>
+                        <VBox prefHeight="265.0" prefWidth="70.0">
+                           <children>
+                              <Label text="Best Events">
+                                 <font>
+                                    <Font name="Calisto MT Bold Italic" size="24.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="8.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Pane prefHeight="80.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fx:id="image1" fitHeight="70.0" fitWidth="98.0" layoutX="37.0" layoutY="2.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../../image/user2.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="LabelName1" layoutX="213.0" layoutY="22.0" text="Event Name">
+                                       <font>
+                                          <Font name="Calisto MT Italic" size="25.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="date1" layoutX="442.0" layoutY="26.0" text="Event Date">
+                                       <font>
+                                          <Font name="Book Antiqua" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="80.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fx:id="image2" fitHeight="70.0" fitWidth="98.0" layoutX="37.0" layoutY="2.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../../image/user2.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="LabelName2" layoutX="213.0" layoutY="22.0" text="Event Name">
+                                       <font>
+                                          <Font name="Calisto MT Italic" size="25.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="date2" layoutX="442.0" layoutY="26.0" text="Event Date">
+                                       <font>
+                                          <Font name="Book Antiqua" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="80.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fx:id="image3" fitHeight="70.0" fitWidth="98.0" layoutX="37.0" layoutY="3.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../../image/user2.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="LabelName3" layoutX="213.0" layoutY="19.0" text="Event Name">
+                                       <font>
+                                          <Font name="Calisto MT Italic" size="25.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="date3" layoutX="442.0" layoutY="23.0" text="Event Date">
+                                       <font>
+                                          <Font name="Book Antiqua" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="344.0" prefWidth="280.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

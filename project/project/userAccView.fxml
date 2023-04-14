@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.96" prefHeight="370.0" prefWidth="370.0" style="-fx-background-color: #72a772;" stylesheets="@styleCss.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.project.UserAccViewController">
+<children>
+    <Label fx:id="fNameLabel" layoutX="41.0" layoutY="27.0" prefHeight="20.0" prefWidth="95.0" text="First Name" textFill="BLANCHEDALMOND">
+        <font>
+            <Font name="Franklin Gothic Medium" size="15.0" />
+        </font>
+    </Label>
+    <Label fx:id="laNameLabel" layoutX="41.0" layoutY="69.0" prefHeight="20.0" prefWidth="95.0" text="Last Name" textFill="BLANCHEDALMOND">
+        <font>
+            <Font name="Franklin Gothic Medium" size="15.0" />
+        </font>
+    </Label>
+    <Label fx:id="emailLabel" layoutX="41.0" layoutY="111.0" prefHeight="20.0" prefWidth="95.0" text="Email" textFill="BLANCHEDALMOND">
+        <font>
+            <Font name="Franklin Gothic Medium" size="15.0" />
+        </font>
+    </Label>
+    <Label fx:id="phoneLabel" layoutX="41.0" layoutY="153.0" prefHeight="20.0" prefWidth="107.0" text="Phone Number" textFill="BLANCHEDALMOND">
+        <font>
+            <Font name="Franklin Gothic Medium" size="15.0" />
+        </font>
+    </Label>
+    <Label fx:id="passwordLabel" layoutX="41.0" layoutY="279.0" prefHeight="20.0" prefWidth="95.0" text="Password" textFill="BLANCHEDALMOND">
+        <font>
+            <Font name="Franklin Gothic Medium" size="15.0" />
+        </font>
+    </Label>
+    <Label fx:id="genderLabel" layoutX="41.0" layoutY="195.0" prefHeight="20.0" prefWidth="95.0" text="Gender" textFill="BLANCHEDALMOND">
+        <font>
+            <Font name="Franklin Gothic Medium" size="15.0" />
+        </font>
+    </Label>
+    <Label fx:id="specializeLabel" layoutX="41.0" layoutY="237.0" prefHeight="20.0" prefWidth="95.0" text="Faculty" textFill="BLANCHEDALMOND">
+        <font>
+            <Font name="Franklin Gothic Medium" size="15.0" />
+        </font>
+    </Label>
+    <TextField fx:id="txtefname" cacheHint="ROTATE" layoutX="181.0" layoutY="23.0" prefHeight="25.0" prefWidth="139.0" promptText="Edit first name " style="-fx-border-color: #e89696;">
+        <cursor>
+            <Cursor fx:constant="DEFAULT" />
+        </cursor>
+    </TextField>
+    <TextField fx:id="txtelastname" layoutX="181.0" layoutY="65.0" prefHeight="25.0" prefWidth="139.0" promptText="Edit last name " style="-fx-border-color: #e89696;" />
+    <TextField fx:id="txteemail" layoutX="181.0" layoutY="107.0" prefHeight="26.0" prefWidth="139.0" promptText="name@company.com" style="-fx-border-color: #e89696;" />
+    <TextField fx:id="txtephone" layoutX="181.0" layoutY="149.0" prefHeight="25.0" prefWidth="139.0" promptText="Edit phone number" style="-fx-border-color: #e89696;" />
+    <ChoiceBox fx:id="choice_e" blendMode="GREEN" layoutX="179.0" layoutY="232.0" prefWidth="150.0" />
+    <PasswordField fx:id="txt_epass" layoutX="178.0" layoutY="275.0" promptText="Edit your passowrd" style="-fx-border-color: #e89696;" />
+    <Button alignment="CENTER" layoutX="102.0" layoutY="328.0" mnemonicParsing="false" onAction="#btnupdate" prefHeight="27.0" prefWidth="150.0" style="-fx-background-color: #ffebcd; -fx-text-fill: green;" stylesheets="@styleCss.css" text="Save Changes" textAlignment="CENTER" textFill="#72a772">
+        <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+        </font>
+         <styleClass>
+            <String fx:value="btnSign" />
+            <String fx:value="btne" />
+         </styleClass>
+
+                </Button>
+    <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#closw" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../../imgss/close.png" />
+        </image>
+    </ImageView>
+      <RadioButton fx:id="rbtn_em" layoutX="177.0" layoutY="195.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="67.0" text="Male" textAlignment="JUSTIFY" textFill="BLANCHEDALMOND">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="genderrr" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rbtn_ef" layoutX="259.0" layoutY="195.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="102.0" text="Female" textAlignment="RIGHT" textFill="BLANCHEDALMOND" toggleGroup="$genderrr">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </RadioButton>
+</children>
+</AnchorPane>

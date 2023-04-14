@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.AmbientLight?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.stage.Stage?>
+
+<Stage xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.project.UserDashController">
+   <scene>
+      <Scene fill="#72a772">
+         <root>
+            <AnchorPane prefHeight="551.0" prefWidth="1000.0" style="-fx-background-color: #72A772;" stylesheets="@styleCss.css">
+               <children>
+                  <VBox layoutX="7.0" layoutY="7.0" prefHeight="200.0" prefWidth="170.0" style="-fx-background-color: #72A772;" stylesheets="@styleCss.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="141.0" prefWidth="136.0" style="-fx-background-radius: 50; -fx-background-color: #fdf6f6; ">
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="50.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="89.0" fitWidth="113.0" pickOnBounds="true">
+                                 <image>
+                                   <Image url="@../../imgss/loogo.jpg" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Pane prefHeight="20.0" prefWidth="200.0" />
+                        <Button alignment="BASELINE_CENTER" mnemonicParsing="false" onAction="#op_hpme" prefHeight="50.0" prefWidth="171.0" styleClass="backColor" stylesheets="@styleCss.css" text="Home" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Calisto MT Italic" size="22.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../imgss/home.jpg" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets bottom="1.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button alignment="BASELINE_CENTER" mnemonicParsing="false" onAction="#op_prof" prefHeight="50.0" prefWidth="171.0" styleClass="backColor" stylesheets="@styleCss.css" text="My Profile" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Calisto MT Italic" size="22.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../imgss/profile-icon-white-3.jpg" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets bottom="1.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button alignment="BASELINE_CENTER" mnemonicParsing="false" onAction="#opcelender" prefHeight="50.0" prefWidth="171.0" styleClass="backColor" stylesheets="@styleCss.css" text="My Events" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Calisto MT Italic" size="22.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../imgss/calendar-icon-white-png-18.jpg" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets bottom="1.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Pane prefHeight="137.0" prefWidth="170.0">
+                           <children>
+                              <Line endX="81.40000915527344" endY="-5.7220458984375E-6" layoutX="69.0" layoutY="22.0" startX="-48.5000114440918" startY="-5.7220458984375E-6" stroke="#fffafa" />
+                              <Button fx:id="btnSignOut" layoutX="37.0" layoutY="51.0" mnemonicParsing="false" onAction="#close_prog" prefHeight="35.0" prefWidth="97.0" style="-fx-background-color: #fdf6f6; -fx-background-radius: 10;" text="Sign out" textFill="#72a772">
+                                 <graphic>
+                                    <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../imgss/sigout.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font name="Calisto MT Bold Italic" size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="170.0" layoutY="8.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <VBox prefHeight="549.0" prefWidth="827.0" style="-fx-background-color: #fdf6f6; -fx-background-radius: 25;">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="5.0" right="8.0" top="10.0" />
+                           </VBox.margin>
+                           <children>
+                              <HBox prefHeight="75.0" prefWidth="820.0">
+                                 <children>
+                                    <AmbientLight color="CHARTREUSE" lightOn="true" />
+                                    <TextField editable="false" minHeight="35.0" prefHeight="35.0" prefWidth="302.0" style="-fx-background-radius: 50;" text="MEETUP will make yout life easier ">
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="20.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <Button mnemonicParsing="false" prefHeight="30.0" style="-fx-background-radius: 55;" styleClass="searchh" stylesheets="@styleCss.css">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="20.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Pane prefHeight="75.0" prefWidth="621.0">
+                                       <children>
+                                          <Button layoutX="310.0" layoutY="16.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #F6D5D5; -fx-background-radius: 8;">
+                                             <graphic>
+                                                <ImageView fitHeight="30.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../imgss/icon_bell.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button layoutX="369.0" layoutY="16.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #F6D5D5; -fx-background-radius: 8;">
+                                             <graphic>
+                                                <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../imgss/prof.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Label fx:id="curr_name" layoutX="423.0" layoutY="25.0" prefHeight="25.0" prefWidth="120.0">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="467.0" prefWidth="722.0">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <children>
+                                    <VBox prefHeight="467.0" prefWidth="827.0">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <children>
+                                          <HBox prefHeight="132.0" prefWidth="800.0" style="-fx-background-color: #F6D5D5; -fx-background-radius: 20;">
+                                             <VBox.margin>
+                                                <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                                             </VBox.margin>
+                                             <children>
+                                                <Pane fx:id="bck" onMousePressed="#stylepane" prefHeight="135.0" prefWidth="800.0">
+                                                   <children>
+                                                      <Label fx:id="ss" alignment="CENTER" contentDisplay="CENTER" layoutX="2.0" layoutY="14.0" prefHeight="32.0" prefWidth="798.0" text="Welcome Back ">
+                                                         <font>
+                                                            <Font name="Arial Black" size="22.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label fx:id="lblname" alignment="CENTER" contentDisplay="CENTER" layoutX="2.0" layoutY="45.0" prefHeight="29.0" prefWidth="798.0" text="Ayah Shraim ">
+                                                         <font>
+                                                            <Font name="Arial Black" size="17.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="2.0" layoutY="77.0" prefHeight="29.0" prefWidth="798.0" text="We are happy to see you again ! " textFill="#0000009e">
+                                                         <font>
+                                                            <Font name="Calibri Bold" size="16.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Pane layoutX="-8.0" layoutY="106.0" prefHeight="298.0" prefWidth="818.0">
+                                                         <children>
+                                                            <HBox layoutY="26.0" prefHeight="288.0" prefWidth="818.0">
+                                                               <children>
+                                                                  <VBox prefHeight="318.0" prefWidth="818.0">
+                                                                     <children>
+                                                                        <Pane prefHeight="63.0" prefWidth="818.0">
+                                                                           <children>
+                                                                              <Label layoutX="66.0" layoutY="14.0" prefHeight="30.0" prefWidth="210.0" text="     Most liked events " textAlignment="RIGHT">
+                                                                                 <font>
+                                                                                    <Font name="Calisto MT Bold" size="21.0" />
+                                                                                 </font>
+                                                                              </Label>
+                                                                              <ImageView fitHeight="52.0" fitWidth="53.0" layoutX="14.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@../../imgss/leader-board-icon-7.jpg" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                           </children>
+                                                                        </Pane>
+                                                                        <VBox alignment="CENTER" prefHeight="261.0" prefWidth="824.0">
+                                                                           <children>
+                                                                              <HBox prefHeight="266.0" prefWidth="787.0" spacing="50.0">
+                                                                                 <children>
+                                                                                    <Button mnemonicParsing="false" prefHeight="190.0" prefWidth="174.0" styleClass="butteve" stylesheets="@styleCss.css">
+                                                                                       <graphic>
+                                                                                          <VBox fx:id="evlike" onMousePressed="#evlik" prefHeight="160.0" prefWidth="149.0" style="-fx-background-color: #ffc0cb; -fx-background-radius: 30 0 0 30;" styleClass="cr" stylesheets="@styleCss.css">
+                                                                                             <children>
+                                                                                                <ImageView fitHeight="103.0" fitWidth="165.0" pickOnBounds="true" style="-fx-background-color: #FFF4F1;">
+                                                                                                   <image>
+                                                                                                      <Image url="@../../imgss/AdobeStock_285825086-1.jpg" />
+                                                                                                   </image>
+                                                                                                </ImageView>
+                                                                                                <Label fx:id="lbl_top1name" alignment="CENTER" prefHeight="71.0" prefWidth="175.0" text="Event Name">
+                                                                                                   <font>
+                                                                                                      <Font name="Gill Sans MT Bold" size="13.0" />
+                                                                                                   </font>
+                                                                                                </Label>
+                                                                                                <Label fx:id="lbl_top1org" alignment="CENTER" prefHeight="71.0" prefWidth="175.0" style="-fx-background-radious: 15;" text="An-najah University">
+                                                                                                   <font>
+                                                                                                      <Font name="Gill Sans MT Bold" size="13.0" />
+                                                                                                   </font>
+                                                                                                   <padding>
+                                                                                                      <Insets top="-20.0" />
+                                                                                                   </padding>
+                                                                                                </Label>
+                                                                                                <Pane prefHeight="4.0" prefWidth="175.0" />
+                                                                                                <Pane prefHeight="58.0" prefWidth="175.0">
+                                                                                                   <children>
+                                                                                                      <ImageView fitHeight="49.0" fitWidth="37.0" layoutX="71.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                                                                                                         <image>
+                                                                                                            <Image url="@../../imgss/heart.png" />
+                                                                                                         </image>
+                                                                                                      </ImageView>
+                                                                                                      <Button fx:id="btn_top1" layoutY="-18.0" mnemonicParsing="false" onAction="#op_top1" prefHeight="40.0" prefWidth="38.0" styleClass="bbc" stylesheets="@styleCss.css">
+                                                                                                         <graphic>
+                                                                                                            <ImageView fitHeight="30.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                                                                                               <image>
+                                                                                                                  <Image url="@../../imgss/view.png" />
+                                                                                                               </image>
+                                                                                                            </ImageView>
+                                                                                                         </graphic>
+                                                                                                      </Button>
+                                                                                                      <Label fx:id="lbl_top1" layoutX="121.0" layoutY="-2.0" prefHeight="22.0" prefWidth="64.0" style="-fx-background-radious: 15;" text=" 5 likes " wrapText="true">
+                                                                                                         <font>
+                                                                                                            <Font name="System Bold" size="12.0" />
+                                                                                                         </font>
+                                                                                                      </Label>
+                                                                                                   </children>
+                                                                                                </Pane>
+                                                                                             </children>
+                                                                                          </VBox>
+                                                                                       </graphic>
+                                                                                    </Button>
+                                                                                    <Button mnemonicParsing="false" prefHeight="190.0" prefWidth="171.0" styleClass="butteve" stylesheets="@styleCss.css">
+                                                                                       <graphic>
+                                                                                          <VBox fx:id="evlike1" onMousePressed="#evlik" prefHeight="160.0" prefWidth="149.0" style="-fx-background-color: #ffc0cb; -fx-background-radius: 30 0 0 30;" styleClass="cr" stylesheets="@styleCss.css">
+                                                                                             <children>
+                                                                                                <ImageView fitHeight="103.0" fitWidth="165.0" pickOnBounds="true" style="-fx-background-color: #FFF4F1;">
+                                                                                                   <image>
+                                                                                                      <Image url="@../../imgss/AdobeStock_285825086-1.jpg" />
+                                                                                                   </image>
+                                                                                                </ImageView>
+                                                                                                <Label fx:id="lbl_top2name" alignment="CENTER" prefHeight="71.0" prefWidth="175.0" text="Event Name">
+                                                                                                   <font>
+                                                                                                      <Font name="Gill Sans MT Bold" size="13.0" />
+                                                                                                   </font>
+                                                                                                </Label>
+                                                                                                <Label fx:id="lbl_top2org" alignment="CENTER" prefHeight="71.0" prefWidth="175.0" style="-fx-background-radious: 15;" text="An-najah University">
+                                                                                                   <font>
+                                                                                                      <Font name="Gill Sans MT Bold" size="13.0" />
+                                                                                                   </font>
+                                                                                                   <padding>
+                                                                                                      <Insets top="-20.0" />
+                                                                                                   </padding>
+                                                                                                </Label>
+                                                                                                <Pane prefHeight="4.0" prefWidth="175.0" />
+                                                                                                <Pane prefHeight="49.0" prefWidth="175.0">
+                                                                                                   <children>
+                                                                                                      <ImageView fitHeight="49.0" fitWidth="37.0" layoutX="71.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+                                                                                                         <image>
+                                                                                                            <Image url="@../../imgss/heart.png" />
+                                                                                                         </image>
+                                                                                                      </ImageView>
+                                                                                                      <Label fx:id="lbl_top2" layoutX="120.0" layoutY="-7.0" prefHeight="22.0" prefWidth="64.0" style="-fx-background-radious: 15;" text=" 5 likes " wrapText="true">
+                                                                                                         <font>
+                                                                                                            <Font name="System Bold" size="12.0" />
+                                                                                                         </font>
+                                                                                                      </Label>
+                                                                                                      <Button fx:id="btn_top2" layoutY="-24.0" mnemonicParsing="false" onAction="#op_top2" prefHeight="40.0" prefWidth="38.0" style="-fx-background-radius: 230; -fx-background-color: tranparent;" styleClass="bbc">
+                                                                                                         <graphic>
+                                                                                                            <ImageView fitHeight="30.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                                                                                               <image>
+                                                                                                                  <Image url="@../../imgss/view.png" />
+                                                                                                               </image>
+                                                                                                            </ImageView>
+                                                                                                         </graphic>
+                                                                                                      </Button>
+                                                                                                   </children>
+                                                                                                </Pane>
+                                                                                             </children>
+                                                                                          </VBox>
+                                                                                       </graphic>
+                                                                                    </Button>
+                                                                                    <Button mnemonicParsing="false" prefHeight="190.0" prefWidth="150.0" styleClass="butteve" stylesheets="@styleCss.css">
+                                                                                       <graphic>
+                                                                                          <VBox fx:id="evlike2" onMousePressed="#evlik" prefHeight="160.0" prefWidth="149.0" style="-fx-background-color: #ffc0cb; -fx-background-radius: 30 0 0 30;" styleClass="cr" stylesheets="@styleCss.css">
+                                                                                             <children>
+                                                                                                <ImageView fitHeight="103.0" fitWidth="165.0" pickOnBounds="true" style="-fx-background-color: #FFF4F1;">
+                                                                                                   <image>
+                                                                                                      <Image url="@../../imgss/AdobeStock_285825086-1.jpg" />
+                                                                                                   </image>
+                                                                                                </ImageView>
+                                                                                                <Label fx:id="lbl_top3name" alignment="CENTER" prefHeight="71.0" prefWidth="175.0" text="Event Name">
+                                                                                                   <font>
+                                                                                                      <Font name="Gill Sans MT Bold" size="13.0" />
+                                                                                                   </font>
+                                                                                                </Label>
+                                                                                                <Label fx:id="lbl_top3org" alignment="CENTER" prefHeight="71.0" prefWidth="175.0" style="-fx-background-radious: 15;" text="An-najah University">
+                                                                                                   <font>
+                                                                                                      <Font name="Gill Sans MT Bold" size="13.0" />
+                                                                                                   </font>
+                                                                                                   <padding>
+                                                                                                      <Insets top="-20.0" />
+                                                                                                   </padding>
+                                                                                                </Label>
+                                                                                                <Pane prefHeight="4.0" prefWidth="175.0" />
+                                                                                                <Pane prefHeight="49.0" prefWidth="175.0">
+                                                                                                   <children>
+                                                                                                      <Pane layoutX="-1.0" layoutY="39.0" prefHeight="33.0" prefWidth="177.0" />
+                                                                                                      <Label fx:id="lbl_top3" layoutX="125.0" layoutY="-7.0" prefHeight="22.0" prefWidth="64.0" style="-fx-background-radious: 15;" text=" 5 likes " wrapText="true">
+                                                                                                         <font>
+                                                                                                            <Font name="System Bold" size="12.0" />
+                                                                                                         </font>
+                                                                                                      </Label>
+                                                                                                      <ImageView fitHeight="49.0" fitWidth="37.0" layoutX="71.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+                                                                                                         <image>
+                                                                                                            <Image url="@../../imgss/heart.png" />
+                                                                                                         </image>
+                                                                                                      </ImageView>
+                                                                                                      <Button fx:id="btn_top3" layoutY="-24.0" mnemonicParsing="false" onAction="#op_top3" prefHeight="40.0" prefWidth="38.0" style="-fx-background-radius: 230; -fx-background-color: tranparent;" styleClass="bbc">
+                                                                                                         <graphic>
+                                                                                                            <ImageView fitHeight="30.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                                                                                               <image>
+                                                                                                                  <Image url="@../../imgss/view.png" />
+                                                                                                               </image>
+                                                                                                            </ImageView>
+                                                                                                         </graphic>
+                                                                                                      </Button>
+                                                                                                   </children>
+                                                                                                </Pane>
+                                                                                             </children>
+                                                                                          </VBox>
+                                                                                       </graphic>
+                                                                                    </Button>
+                                                                                 </children>
+                                                                                 <padding>
+                                                                                    <Insets bottom="15.0" left="30.0" right="15.0" top="15.0" />
+                                                                                 </padding>
+                                                                              </HBox>
+                                                                           </children>
+                                                                           <padding>
+                                                                              <Insets left="30.0" />
+                                                                           </padding>
+                                                                        </VBox>
+                                                                        <Pane prefHeight="31.0" prefWidth="813.0" />
+                                                                     </children>
+                                                                  </VBox>
+                                                               </children>
+                                                            </HBox>
+                                                         </children>
+                                                      </Pane>
+                                                   </children>
+                                                </Pane>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </root>
+      </Scene>
+   </scene>
+</Stage>

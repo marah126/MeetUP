@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.stage.Stage?>
+
+<Stage xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.project.NewEventController">
+   <scene>
+      <Scene>
+         <root>
+            <AnchorPane prefHeight="200" prefWidth="200">
+               <children>
+                  <AnchorPane prefHeight="551.0" prefWidth="1000.0">
+                     <children>
+                        <BorderPane fx:id="border1" prefHeight="551.0" prefWidth="1000.0">
+                           <left>
+                              <VBox prefHeight="200.0" prefWidth="170.0" styleClass="backColor" stylesheets="@style.css" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Button fx:id="BTNlogo" alignment="CENTER" mnemonicParsing="false" prefHeight="130.0" prefWidth="130.0" style="-fx-background-radius: 50; -fx-background-color: #fdf6f6; ">
+                                       <VBox.margin>
+                                          <Insets left="20.0" right="20.0" top="50.0" />
+                                       </VBox.margin>
+                                       <graphic>
+                                          <ImageView fitHeight="95.0" fitWidth="100.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@../../image/llogo.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Pane prefHeight="20.0" prefWidth="200.0" />
+                                    <Button fx:id="BTNHome" mnemonicParsing="false" onAction="#homeAction" prefHeight="50.0" prefWidth="171.0" stylesheets="@style.css" text="Home" textFill="#fdf6f6">
+                                       <font>
+                                          <Font name="Calisto MT Italic" size="22.0" />
+                                       </font>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <cursor>
+                                          <Cursor fx:constant="DEFAULT" />
+                                       </cursor>
+                                       <styleClass>
+                                          <String fx:value="backColor" />
+                                          <String fx:value="mouse-moved" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button fx:id="BTNEvent" mnemonicParsing="false" onAction="#btnEventsHandle" prefHeight="50.0" prefWidth="171.0" stylesheets="@style.css" text="Events" textFill="#fdf6f6">
+                                       <font>
+                                          <Font name="Calisto MT Italic" size="22.0" />
+                                       </font>
+                                       <styleClass>
+                                          <String fx:value="backColor" />
+                                          <String fx:value="mouse-moved" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button fx:id="BTNStatistics" mnemonicParsing="false" onAction="#btnStatisticsHandle" prefHeight="50.0" prefWidth="171.0" stylesheets="@style.css" text="Statistics" textFill="#fdf6f6">
+                                       <font>
+                                          <Font name="Calisto MT Italic" size="22.0" />
+                                       </font>
+                                       <styleClass>
+                                          <String fx:value="backColor" />
+                                          <String fx:value="mouse-moved" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button fx:id="BTNProfile" mnemonicParsing="false" onAction="#btnProfileHandle" prefHeight="50.0" prefWidth="171.0" stylesheets="@style.css" text="My Profile" textFill="#fdf6f6">
+                                       <font>
+                                          <Font name="Calisto MT Italic" size="22.0" />
+                                       </font>
+                                       <styleClass>
+                                          <String fx:value="backColor" />
+                                          <String fx:value="mouse-moved" />
+                                       </styleClass>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </left>
+                           <center>
+                              <BorderPane fx:id="border2" prefHeight="302.0" prefWidth="830.0" BorderPane.alignment="CENTER">
+                                 <top>
+                                    <HBox prefHeight="75.0" prefWidth="820.0" style="-fx-background-color: #fdf6f6;" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <TextField fx:id="TXTSearch" prefHeight="35.0" prefWidth="155.0" promptText="Search" style="-fx-background-radius: 50;">
+                                             <HBox.margin>
+                                                <Insets left="10.0" top="20.0" />
+                                             </HBox.margin>
+                                          </TextField>
+                                          <Button fx:id="BTNSearch" mnemonicParsing="false" onAction="#btnSearchHandle" prefHeight="30.0" style="-fx-background-radius: 50;" styleClass="backColor" stylesheets="@style.css">
+                                             <HBox.margin>
+                                                <Insets left="5.0" top="22.5" />
+                                             </HBox.margin>
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../image/search.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Pane prefHeight="75.0" prefWidth="614.0">
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                             <children>
+                                                <Button fx:id="BTNuser" layoutX="447.0" layoutY="9.0" mnemonicParsing="false" onAction="#btnUserProfileHandle" prefHeight="50.0" prefWidth="60.0" style="-fx-background-radius: 10; -fx-background-color: #ffe7be;">
+                                                   <graphic>
+                                                      <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../../image/user2.jpg" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                                <Button fx:id="BTNmassege" layoutX="373.0" layoutY="9.0" mnemonicParsing="false" onAction="#btnFeedbackHandle" prefHeight="58.0" prefWidth="58.0" style="-fx-background-radius: 10; -fx-background-color: #ffe7be;">
+                                                   <graphic>
+                                                      <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../../image/letter.jpg" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                                <Label fx:id="LabelUserName" layoutX="517.0" layoutY="29.0" prefHeight="19.0" prefWidth="81.0" text="user name">
+                                                   <font>
+                                                      <Font name="Calisto MT" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </HBox>
+                                 </top>
+                                 <center>
+                                    <Label text="Label" BorderPane.alignment="CENTER">
+                                       <graphic>
+                                          <AnchorPane prefHeight="474.0" prefWidth="827.0" style="-fx-background-color: #fdf6f6;">
+                                             <children>
+                                                <HBox prefHeight="40.0" prefWidth="827.0">
+                                                   <children>
+                                                      <Label prefHeight="40.0" prefWidth="298.0" text="Create New Event . . ">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                         <font>
+                                                            <Font name="Calisto MT Bold Italic" size="24.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <Label layoutX="46.0" layoutY="50.0" prefHeight="50.0" prefWidth="220.0" text="Basic Information">
+                                                   <font>
+                                                      <Font name="Calisto MT Bold" size="24.0" />
+                                                   </font>
+                                                </Label>
+                                                <Separator layoutY="51.0" prefHeight="3.0" prefWidth="827.0" />
+                                                <Label layoutX="51.0" layoutY="103.0" prefHeight="19.0" prefWidth="192.0" text="Event Title">
+                                                   <font>
+                                                      <Font name="Calisto MT" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="TXTNewTitle" layoutX="51.0" layoutY="135.0" prefHeight="40.0" prefWidth="260.0" promptText="Choose clear and discriptive title">
+                                                   <font>
+                                                      <Font size="16.0" />
+                                                   </font>
+                                                </TextField>
+                                                <Label layoutX="51.0" layoutY="192.0" prefHeight="21.0" prefWidth="192.0" text="Event Description">
+                                                   <font>
+                                                      <Font name="Calisto MT" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="TXTNewDescription" layoutX="51.0" layoutY="220.0" prefHeight="40.0" prefWidth="260.0" promptText="Description">
+                                                   <font>
+                                                      <Font size="16.0" />
+                                                   </font>
+                                                </TextField>
+                                                <Label layoutX="463.0" layoutY="59.0" prefHeight="50.0" prefWidth="220.0" text="Date and Time">
+                                                   <font>
+                                                      <Font name="Calisto MT Bold" size="24.0" />
+                                                   </font>
+                                                </Label>
+                                                <DatePicker fx:id="NewDate" blendMode="DARKEN" layoutX="464.0" layoutY="154.0" prefHeight="40.0" prefWidth="154.0" promptText="Start Date" />
+                                                <Label layoutX="463.0" layoutY="92.0" prefHeight="32.0" prefWidth="350.0" text="Tell event-goers when your event starts and ends so they can " />
+                                                <Label layoutX="464.0" layoutY="118.0" prefHeight="17.0" prefWidth="238.0" text="make plans to attend." />
+                                                <ImageView fitHeight="32.0" fitWidth="37.0" layoutX="417.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../image/callender.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label layoutX="60.0" layoutY="278.0" prefHeight="50.0" prefWidth="220.0" text="Location">
+                                                   <font>
+                                                      <Font name="Calisto MT Bold" size="24.0" />
+                                                   </font>
+                                                </Label>
+                                                <ImageView fitHeight="32.0" fitWidth="37.0" layoutX="14.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../image/location.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label layoutX="60.0" layoutY="314.0" prefHeight="32.0" prefWidth="350.0" text="Help people in the area discover your event and let attendees " />
+                                                <Label layoutX="61.0" layoutY="342.0" prefHeight="17.0" prefWidth="238.0" text="know where to show up." />
+                                                <Separator layoutX="411.0" layoutY="55.0" orientation="VERTICAL" prefHeight="412.0" prefWidth="2.0" />
+                                                <ImageView fitHeight="32.0" fitWidth="37.0" layoutX="8.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../image/info.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                                <Button fx:id="BTNNext" layoutX="749.0" layoutY="427.0" mnemonicParsing="false" onAction="#nextAction" prefHeight="25.0" prefWidth="64.0" style="-fx-background-color: #fdf6f6; -fx-border-color: #72A772;" text="Next">
+                                                   <font>
+                                                      <Font name="Calisto MT Bold" size="15.0" />
+                                                   </font>
+                                                </Button>
+                                                <RadioButton fx:id="btnOnline" layoutX="61.0" layoutY="373.0" mnemonicParsing="false" onAction="#btnOnlineHandle" text="Online Event?">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <Label layoutX="466.0" layoutY="236.0" text="Start Time">
+                                                   <font>
+                                                      <Font name="Calisto MT" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="664.0" layoutY="233.0" text="End Time">
+                                                   <font>
+                                                      <Font name="Calisto MT" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <ComboBox fx:id="StartTime" layoutX="466.0" layoutY="275.0" prefHeight="25.0" prefWidth="133.0" />
+                                                <ComboBox fx:id="EndTime" layoutX="666.0" layoutY="275.0" prefHeight="25.0" prefWidth="133.0" />
+                                                <ComboBox fx:id="Location" layoutX="63.0" layoutY="399.0" prefHeight="32.0" prefWidth="206.0" />
+                                                <Label fx:id="warnning" layoutX="463.0" layoutY="342.0" prefHeight="17.0" prefWidth="260.0" textFill="RED" />
+                                             </children>
+                                          </AnchorPane>
+                                       </graphic>
+                                    </Label>
+                                 </center>
+                              </BorderPane>
+                           </center>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </root>
+      </Scene>
+   </scene>
+</Stage>

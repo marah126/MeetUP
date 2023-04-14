@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="250.0" style="-fx-background-color: #f5d5d5; -fx-background-radius: 30;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="image" fitHeight="120.0" fitWidth="200.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../image/event.jpg" />
+         </image>
+         <VBox.margin>
+            <Insets left="25.0" top="10.0" />
+         </VBox.margin>
+      </ImageView>
+      <Label fx:id="Name" alignment="CENTER" prefHeight="33.0" prefWidth="224.0" text="Event Name">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="10.0" top="5.0" />
+         </VBox.margin>
+      </Label>
+      <Label fx:id="Date" alignment="CENTER" prefHeight="27.0" prefWidth="224.0" text="Mon , 12/6/2020">
+         <font>
+            <Font name="Book Antiqua Bold" size="16.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="10.0" top="5.0" />
+         </VBox.margin>
+      </Label>
+      <Label fx:id="Place" alignment="CENTER" prefHeight="27.0" prefWidth="224.0" text="Place">
+         <font>
+            <Font name="Book Antiqua Bold" size="16.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="10.0" top="5.0" />
+         </VBox.margin>
+      </Label>
+   </children>
+</VBox>

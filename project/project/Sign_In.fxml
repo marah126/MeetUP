@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="362.0" styleClass="signbk" stylesheets="@styleCss.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.project.SignInController">
+    <children>
+        <Pane prefHeight="480.0" prefWidth="480.0">
+            <children>
+                <Pane layoutY="6.0" prefHeight="149.0" prefWidth="362.0">
+                    <children>
+                        <ImageView fitHeight="30.0" fitWidth="36.0" layoutX="71.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../imgss/user-icon.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="30.0" fitWidth="41.0" layoutX="160.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../imgss/addorg.png" />
+                            </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="-14.0" layoutY="28.0" prefHeight="28.0" prefWidth="362.0" style="-fx-font-weight: 20;" stylesheets="@styleCss.css" text="  Sign In As :" textAlignment="JUSTIFY" wrapText="true">
+                            <font>
+                                <Font name="Calisto MT Italic" size="28.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="40.0" fitWidth="36.0" layoutX="247.0" layoutY="87.0" pickOnBounds="true">
+                            <image>
+                                <Image url="@../../imgss/274963345_1470949359991006_4388196668168192324_n.png" />
+                            </image>
+                        </ImageView>
+                        <Pane layoutX="4.0" layoutY="120.0" prefHeight="30.0" prefWidth="313.0" styleClass="container" stylesheets="@styleCss.css">
+                            <children>
+                                <RadioButton fx:id="rbtn_userr" layoutX="36.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="77.0" selected="true" style="-fx-text-fill: #35b135;" styleClass="con1" stylesheets="@styleCss.css" text="User" textAlignment="JUSTIFY" textFill="#35b135">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="account1" />
+                                    </toggleGroup>
+                                </RadioButton>
+                                <RadioButton fx:id="rbtn_orgg" layoutX="113.0" layoutY="4.0" mnemonicParsing="false" style="-fx-text-fill: #35b135;" styleClass="con2" stylesheets="@styleCss.css" text="Orgnization " textAlignment="RIGHT" textFill="#35b135" toggleGroup="$account1">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                </RadioButton>
+                                <RadioButton fx:id="rbtn_admin" layoutX="233.0" layoutY="4.0" mnemonicParsing="false" style="-fx-text-fill: #35b135;" styleClass="con2" stylesheets="@styleCss.css" text="Admin" textAlignment="RIGHT" textFill="#35b135" toggleGroup="$account1">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                </RadioButton>
+                            </children>
+                        </Pane>
+                    </children>
+                </Pane>
+                <Pane layoutY="147.0" prefHeight="335.0" prefWidth="370.0">
+                    <children>
+                        <Label fx:id="emailLabel" layoutX="14.0" layoutY="68.0" prefHeight="26.0" prefWidth="130.0" text="Email Address :" textFill="#35b135">
+                            <font>
+                                <Font name="Calisto MT Bold Italic" size="19.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="passwordLabel" layoutX="14.0" layoutY="122.0" prefHeight="20.0" prefWidth="95.0" text="Password :" textFill="#35b135">
+                            <font>
+                                <Font name="Calisto MT Bold Italic" size="19.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="passwordText" layoutX="176.0" layoutY="122.0" prefHeight="25.0" prefWidth="174.0" />
+                        <TextField fx:id="txtSigInEmail" layoutX="175.0" layoutY="68.0" prefHeight="26.0" prefWidth="174.0" promptText="name@company.com" style="-fx-border-color: #e89696;" />
+                        <PasswordField fx:id="txtSignIn" layoutX="175.0" layoutY="121.0" prefHeight="26.0" prefWidth="174.0" promptText="Enter your passowrd" style="-fx-border-color: #e89696;" />
+                        <Button fx:id="btnSignIn" layoutX="26.0" layoutY="203.0" mnemonicParsing="false" onAction="#open_user_dash" prefHeight="30.0" prefWidth="299.0" styleClass="btnSign" stylesheets="@styleCss.css" text="Sign In" textFill="WHITE" />
+                        <Label fx:id="invalidLabel" alignment="CENTER" layoutX="26.0" layoutY="242.0" onMouseClicked="#reset_password" prefHeight="18.0" prefWidth="299.0" style="-fx-background-color: transparent;" styleClass="invalidd" stylesheets="@styleCss.css" text="Invalid Password or User Name" textAlignment="CENTER" />
+                        <ImageView fitHeight="70.0" fitWidth="107.0" layoutX="141.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../imgss/Wedges-4s-200px.gif" />
+                            </image>
+                        </ImageView>
+                        <CheckBox fx:id="checkBox" layoutX="26.0" layoutY="168.0" mnemonicParsing="false" onAction="#Show_pass" prefHeight="23.0" prefWidth="107.0" text="Show Password" />
+                    </children>
+                </Pane>
+            </children>
+        </Pane>
+    </children>
+</VBox>

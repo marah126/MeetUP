@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.stage.Stage?>
+
+<Stage xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.project.statisticsController">
+    <scene>
+        <Scene>
+            <AnchorPane prefHeight="322.0" prefWidth="428.0">
+            <children>
+               <Label layoutX="79.0" layoutY="114.0" text="hi, statistics page">
+                  <font>
+                     <Font size="36.0" />
+                  </font>
+               </Label>
+            </children></AnchorPane>
+        </Scene>
+    </scene>
+</Stage>

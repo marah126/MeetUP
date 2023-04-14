@@ -1,0 +1,249 @@
+.parent
+{
+    -fx-background-color: transparent;
+}
+.panec
+{
+
+   // -fx-background-image: url("../../../imgss/grr.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+
+
+
+}
+.signbk
+{
+    -fx-backforund-color:transparent ;
+    /*
+    -fx-background-image: url("../../../imgss/ssback.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+*/
+
+}
+
+.btn
+{
+    -fx-background-color: transparent;
+    -fx-background-radius: 20px;
+    -fx-border-color: #cccccc;
+    -fx-text-fill: white;
+
+}
+
+.btn:hover
+{
+    -fx-font-weight: bold ;
+    -fx-background-color: #72A772;
+    -fx-text-fill: white;
+    -fx-border-radius: 20px ;
+    -fx-border-width: 3px;
+
+
+
+
+}
+
+.btn:pressed
+{
+    -fx-font-weight: bold ;
+    -fx-background-color: #72A772;
+    -fx-text-fill: white;
+    -fx-border-radius: 20px ;
+    -fx-border-width: 3px;
+    -fx-rotate: 10;
+
+}
+
+
+.Vbox
+{
+    -fx-background-color: #fae3e3;
+
+}
+
+.pink-pane
+{
+    -fx-background-color: #FDF6F6;
+}
+.blue-pane
+{
+    -fx-background-color:#fae3e3 ;
+}
+.closeIcon:hover
+{
+    -fx-cursor:hand;
+
+}
+.closeeIcon{
+    -fx-background-color: pink;
+}
+.closeeIcon:hover {
+    -fx-cursor: hande;
+    -fx-background-color: green;
+    -fx-rotate: -10;
+    -fx-rotate: 10;
+
+}
+.show_fbb{
+    -fx-background-color: green;
+    -fx-background-radius: 200;
+}
+.show_fbb:pressed{
+    -fx-cursor: hande;
+    -fx-background-color: green;
+    -fx-rotate: -10;
+    -fx-rotate: 10;
+
+
+}
+.closeeIcon:pressed
+{
+    -fx-background-color: green;
+
+
+}
+.btnSign
+{
+    -fx-background-color: #72A772;
+  -fx-text-fill: white;
+    -fx-font-weight: bold;
+
+}
+
+.btnSign:hover
+{
+
+    -fx-cursor:hand;
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, #087c25;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em; /* 4 8 4 8 */
+    -fx-text-fill: white;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+}
+
+.btne:pressed{
+    -fx-font-weight: bold ;
+    -fx-border-radius: 20px ;
+    -fx-border-width: 3px;
+    -fx-rotate: 10;
+
+
+}
+
+.invalidd:hover
+{
+    -fx-text-fill:#182139;
+    -fx-underline: true;
+
+}
+.backColor {
+    -fx-background-color:#72A772;
+}
+.backColor:hover{
+    -fx-background-color:  #087c25;
+}
+.backColor:pressed{
+    -fx-background-color:#AACAAA ;
+}
+.butteve{
+    -fx-background-color:#8EB88E;
+    -fx-background-radius: 0 0 0 30 ;
+}
+.butteve:hover{
+    -fx-background-color:#72A772 ;
+}
+
+.butteve:pressed{
+    -fx-background-color: #385338;
+}
+.cr:hover{
+    -fx-animated: FadeIn;
+}
+.dialog
+{
+    -fx-background-color: #72A772;
+}
+
+
+.searchh {
+    -fx-background-color: #72A772;
+    /*#D2A44F*/
+
+}
+.card {
+    -fx-background-color: radial-gradient(center 50% 50% , radius 100% , #ffebcd, #72A772);
+}
+.cover
+{
+    //-fx-background-image: url("../../../imgss/ccoverr.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+
+}
+
+.delbtn
+{
+    -fx-background-color:#52b772;
+    -fx-background-size: cover;
+    -fx-background-radius: 20;
+}
+
+
+.table-view .column-header,
+.table-view .column-header-background .filler
+{
+    -fx-background-color:#72a772;
+    /*-fx-cell-size: 60;*/
+}
+.table-view .column-header .label
+{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: center-left;
+}
+.table-view .cell {
+    -fx-alignment: center-left;
+    -fx-fill: #000000;
+}
+
+.searchh:hover
+{
+    -fx-background-color: #087c25;
+
+}
+.searchh:pressed
+{
+    -fx-background-color: #72A772;
+
+}
+.bbc {
+    -fx-background-color: transparent;
+    -fx-background-radius: 230;
+}
+.bbc:hover{
+    -fx-cursor: hand;
+
+}
+.bbc:pressed
+{
+    -fx-background-color: rgb(255,255,255,0.3);
+    -fx-cursor: hand;
+
+}
+
+
+.logobtn
+{
+
+    //-fx-background-image: url("../../../imgss/loogo.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+
+
+}
+
+

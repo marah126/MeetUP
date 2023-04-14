@@ -1,0 +1,6 @@
+.backColor{
+    -fx-background-color:  #72A772;
+}
+.mouse-moved:hover{
+    -fx-background-color: #507550;
+}

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.stage.Stage?>
+
+<Stage xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.project.admin1CTRL">
+    <scene>
+        <Scene>
+            <AnchorPane prefHeight="550.0" prefWidth="1000.0">
+            <children>
+               <BorderPane fx:id="border1" prefHeight="551.0" prefWidth="1000.0">
+                  <left>
+                     <VBox prefHeight="200.0" prefWidth="170.0" styleClass="backColor" stylesheets="@style.css" BorderPane.alignment="CENTER">
+                        <children>
+                           <Button fx:id="BTNlogo" alignment="CENTER" mnemonicParsing="false" prefHeight="130.0" prefWidth="130.0" style="-fx-background-radius: 50; -fx-background-color: #fdf6f6; ">
+                              <VBox.margin>
+                                 <Insets left="20.0" right="20.0" top="50.0" />
+                              </VBox.margin>
+                              <graphic>
+                                 <ImageView fitHeight="95.0" fitWidth="100.0" pickOnBounds="true">
+                                    <image>
+                                       <Image url="@../../image/llogo.jpg" />
+                                    </image>
+                                 </ImageView>
+                              </graphic>
+                           </Button>
+                           <Pane prefHeight="135.0" prefWidth="170.0" />
+                           <Button fx:id="BTNHome" mnemonicParsing="false" prefHeight="50.0" prefWidth="171.0" stylesheets="@style.css" text="Home" textFill="#fdf6f6">
+                              <font>
+                                 <Font name="Calisto MT Italic" size="22.0" />
+                              </font>
+                              <opaqueInsets>
+                                 <Insets />
+                              </opaqueInsets>
+                              <cursor>
+                                 <Cursor fx:constant="DEFAULT" />
+                              </cursor>
+                              <styleClass>
+                                 <String fx:value="backColor" />
+                                 <String fx:value="mouse-moved" />
+                              </styleClass>
+                           </Button>
+                           <Button fx:id="BTNHome1" mnemonicParsing="false" onAction="#handle" prefHeight="50.0" prefWidth="171.0" stylesheets="@style.css" text="Accept" textFill="#fdf6f6">
+                              <font>
+                                 <Font name="Calisto MT Italic" size="22.0" />
+                              </font>
+                              <opaqueInsets>
+                                 <Insets />
+                              </opaqueInsets>
+                              <cursor>
+                                 <Cursor fx:constant="DEFAULT" />
+                              </cursor>
+                              <styleClass>
+                                 <String fx:value="backColor" />
+                                 <String fx:value="mouse-moved" />
+                              </styleClass>
+                           </Button>
+                        </children>
+                     </VBox>
+                  </left>
+                  <center>
+                     <BorderPane fx:id="border2" prefHeight="302.0" prefWidth="830.0" BorderPane.alignment="CENTER">
+                        <top>
+                           <HBox prefHeight="75.0" prefWidth="820.0" style="-fx-background-color: #fdf6f6;" BorderPane.alignment="CENTER">
+                              <children>
+                                 <TextField fx:id="TXTSearch" prefHeight="35.0" prefWidth="155.0" promptText="Search" style="-fx-background-radius: 50;">
+                                    <HBox.margin>
+                                       <Insets left="10.0" top="20.0" />
+                                    </HBox.margin>
+                                 </TextField>
+                                 <Button fx:id="BTNSearch" mnemonicParsing="false" prefHeight="30.0" style="-fx-background-radius: 50;" styleClass="backColor" stylesheets="@style.css">
+                                    <HBox.margin>
+                                       <Insets left="5.0" top="22.5" />
+                                    </HBox.margin>
+                                    <graphic>
+                                       <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                             <Image url="@../../image/search.jpg" />
+                                          </image>
+                                       </ImageView>
+                                    </graphic>
+                                 </Button>
+                                 <Pane prefHeight="75.0" prefWidth="614.0">
+                                    <HBox.margin>
+                                       <Insets />
+                                    </HBox.margin>
+                                    <children>
+                                       <Button fx:id="BTNuser" layoutX="447.0" layoutY="9.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="60.0" style="-fx-background-radius: 10; -fx-background-color: #ffe7be;">
+                                          <graphic>
+                                             <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                <image>
+                                                   <Image url="@../../image/user2.jpg" />
+                                                </image>
+                                             </ImageView>
+                                          </graphic>
+                                       </Button>
+                                       <Button fx:id="BTNmassege" layoutX="373.0" layoutY="9.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="58.0" style="-fx-background-radius: 10; -fx-background-color: #ffe7be;">
+                                          <graphic>
+                                             <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                <image>
+                                                   <Image url="@../../image/letter.jpg" />
+                                                </image>
+                                             </ImageView>
+                                          </graphic>
+                                       </Button>
+                                       <Label fx:id="LabelUserName" layoutX="517.0" layoutY="29.0" prefHeight="19.0" prefWidth="81.0" text="user name">
+                                          <font>
+                                             <Font name="Calisto MT" size="15.0" />
+                                          </font>
+                                       </Label>
+                                    </children>
+                                 </Pane>
+                              </children>
+                           </HBox>
+                        </top>
+                        <center>
+                           <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fdf6f6; -fx-background-radius: 15;" BorderPane.alignment="CENTER">
+                              <children>
+                                 <Pane prefHeight="124.0" prefWidth="804.0" style="-fx-background-color: #ffe7be; -fx-background-radius: 20;">
+                                    <children>
+                                       <Label layoutX="32.0" layoutY="14.0" text="Hello!  Are Yoy Ready To Create New Events ?">
+                                          <font>
+                                             <Font name="Calisto MT Bold Italic" size="25.0" />
+                                          </font>
+                                       </Label>
+                                       <Label layoutX="32.0" layoutY="62.0" text="Lets Ceate Event . .">
+                                          <font>
+                                             <Font name="Calisto MT Bold Italic" size="25.0" />
+                                          </font>
+                                       </Label>
+                                       <ImageView fitHeight="113.0" fitWidth="139.0" layoutX="580.0" layoutY="6.0" pickOnBounds="true">
+                                          <image>
+                                             <Image url="@../../image/event.jpg" />
+                                          </image>
+                                       </ImageView>
+                                    </children>
+                                 </Pane>
+                                 <Pane layoutX="380.0" layoutY="131.0" prefHeight="72.0" prefWidth="85.0" style="-fx-background-color: #ffe7be; -fx-background-radius: 15;">
+                                    <children>
+                                       <Label layoutX="16.0" layoutY="11.0" text="Events">
+                                          <font>
+                                             <Font name="Calisto MT Bold Italic" size="20.0" />
+                                          </font>
+                                       </Label>
+                                       <Label fx:id="countEvent" layoutX="30.0" layoutY="35.0" text="22">
+                                          <font>
+                                             <Font name="Book Antiqua" size="24.0" />
+                                          </font>
+                                       </Label>
+                                    </children>
+                                 </Pane>
+                                 <Pane layoutX="204.0" layoutY="131.0" prefHeight="72.0" prefWidth="85.0" style="-fx-background-color: #ffe7be; -fx-background-radius: 15;">
+                                    <children>
+                                       <Label layoutX="21.0" layoutY="14.0" text="Users">
+                                          <font>
+                                             <Font name="Calisto MT Bold Italic" size="20.0" />
+                                          </font>
+                                       </Label>
+                                       <Label fx:id="userCount" layoutX="30.0" layoutY="35.0" text="22">
+                                          <font>
+                                             <Font name="Book Antiqua" size="24.0" />
+                                          </font>
+                                       </Label>
+                                    </children>
+                                 </Pane>
+                                 <Pane layoutX="36.0" layoutY="131.0" prefHeight="72.0" prefWidth="85.0" style="-fx-background-color: #ffe7be; -fx-background-radius: 15;">
+                                    <children>
+                                       <Label layoutX="10.0" layoutY="14.0" text="Organizers">
+                                          <font>
+                                             <Font name="Calisto MT Bold Italic" size="17.0" />
+                                          </font>
+                                       </Label>
+                                       <Label fx:id="orgCount" layoutX="31.0" layoutY="35.0" text="22">
+                                          <font>
+                                             <Font name="Book Antiqua" size="24.0" />
+                                          </font>
+                                       </Label>
+                                    </children>
+                                 </Pane>
+                                 <Label layoutX="21.0" layoutY="224.0" text="Top organizers. . ">
+                                    <font>
+                                       <Font name="Calisto MT Bold Italic" size="24.0" />
+                                    </font>
+                                 </Label>
+                                 <ImageView fitHeight="70.0" fitWidth="75.0" layoutX="54.0" layoutY="258.0" pickOnBounds="true">
+                                    <image>
+                                       <Image url="@../../image/first (2).jpg" />
+                                    </image>
+                                 </ImageView>
+                                 <ImageView fitHeight="70.0" fitWidth="75.0" layoutX="54.0" layoutY="328.0" pickOnBounds="true">
+                                    <image>
+                                       <Image url="@../../image/second.jpg" />
+                                    </image>
+                                 </ImageView>
+                                 <ImageView fitHeight="70.0" fitWidth="75.0" layoutX="54.0" layoutY="398.0" pickOnBounds="true">
+                                    <image>
+                                       <Image url="@../../image/third.jpg" />
+                                    </image>
+                                 </ImageView>
+                                 <Label fx:id="LabelName1" layoutX="187.0" layoutY="278.0">
+                                    <font>
+                                       <Font name="Calisto MT Italic" size="25.0" />
+                                    </font>
+                                 </Label>
+                                 <Label fx:id="LabelName2" layoutX="187.0" layoutY="348.0">
+                                    <font>
+                                       <Font name="Calisto MT Italic" size="25.0" />
+                                    </font>
+                                 </Label>
+                                 <Label fx:id="LabelName3" layoutX="187.0" layoutY="418.0">
+                                    <font>
+                                       <Font name="Calisto MT Italic" size="25.0" />
+                                    </font>
+                                 </Label>
+                                 <Label fx:id="Labelcount1" layoutX="415.0" layoutY="286.0">
+                                    <font>
+                                       <Font name="Calisto MT Italic" size="25.0" />
+                                    </font>
+                                 </Label>
+                                 <Label fx:id="Labelcount2" layoutX="415.0" layoutY="348.0">
+                                    <font>
+                                       <Font name="Calisto MT Italic" size="25.0" />
+                                    </font>
+                                 </Label>
+                                 <Label fx:id="Labelcount3" layoutX="415.0" layoutY="418.0">
+                                    <font>
+                                       <Font name="Calisto MT Italic" size="25.0" />
+                                    </font>
+                                 </Label>
+                                 <Separator layoutX="530.0" layoutY="131.0" orientation="VERTICAL" prefHeight="344.0" prefWidth="20.0" />
+                                 <Label layoutX="550.0" layoutY="153.0" text="Reports. .">
+                                    <font>
+                                       <Font name="Calisto MT Bold Italic" size="24.0" />
+                                    </font>
+                                 </Label>
+                                 <Button layoutX="575.0" layoutY="211.0" mnemonicParsing="false" onAction="#Report1" prefHeight="48.0" prefWidth="178.0" style="-fx-border-color: #72A772; -fx-background-color: #ffe7be;" text="Organizer Report">
+                                    <font>
+                                       <Font name="System Bold" size="15.0" />
+                                    </font>
+                                 </Button>
+                                 <Button layoutX="575.0" layoutY="285.0" mnemonicParsing="false" onAction="#Report2" prefHeight="48.0" prefWidth="178.0" style="-fx-border-color: #72A772; -fx-background-color: #ffe7be;" text="Events Report">
+                                    <font>
+                                       <Font name="System Bold" size="15.0" />
+                                    </font>
+                                 </Button>
+                                 <Button layoutX="575.0" layoutY="374.0" mnemonicParsing="false" onAction="#Report3" prefHeight="48.0" prefWidth="178.0" style="-fx-border-color: #72A772; -fx-background-color: #ffe7be;" text="Users Report">
+                                    <font>
+                                       <Font name="System Bold" size="15.0" />
+                                    </font>
+                                 </Button>
+                              </children>
+                           </AnchorPane>
+                        </center>
+                     </BorderPane>
+                  </center>
+               </BorderPane>
+            </children></AnchorPane>
+        </Scene>
+    </scene>
+</Stage>
